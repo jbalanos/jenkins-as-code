@@ -1,4 +1,4 @@
-pipeline {
+
     node('master'){
 
         stage('Checkout'){
@@ -11,4 +11,3 @@ pipeline {
             jobdsl(targets:'jobdsl/*.groovy', sandbox: true)
         }
     }
-}
