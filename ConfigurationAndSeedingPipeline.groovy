@@ -8,6 +8,6 @@
         }
 
         stage('JobSeeding'){
-            jobDsl(targets:'jobdsl/*.groovy', sandbox: true)
+            jobDsl(targets:'jobdsl/*.groovy', sandbox: false)
         }
     }
